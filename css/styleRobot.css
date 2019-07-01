@@ -1,0 +1,165 @@
+body{
+	background-image: url("hand.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+height:100vh;
+
+}
+
+h1 {
+	color:orange;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+.robots {
+display: flex;
+	justify-content: center;
+}
+
+
+.head, 
+.left_arm, 
+.torso, 
+.right_arm, 
+.left_leg, 
+.right_leg {
+	 background-color: #ca2d6b;
+}
+
+.head { 
+	width: 190px; 
+	margin: 0 auto; 
+	height: 150px; 
+	border-radius: 200px 200px 30px 30px; 
+	margin-bottom: 10px;
+	display:flex;
+	transition: all 1s;
+	text-align: center;
+} 
+
+.eyes {
+	
+}
+
+.head:hover {
+	width: 250px;
+    transition: 1s ease-in-out;
+}
+
+.upper_body { 
+	width: 300px; 
+	height: 150px;
+	display: flex; 
+
+} 
+
+.left_arm, .right_arm { 
+	width: 40px; 
+	height: 125px;
+	margin-top:10px;
+} 
+
+.left_arm { 
+	margin-right: 5px; 
+	border-radius: 200px 0px 100px 100px;
+	transition: all 1s; 
+} 
+
+
+.left_arm:hover{
+margin-top:-100px;
+border-radius: 100px 100px 0px 200px;
+}
+
+.right_arm { 
+	margin-left: 5px; 
+	border-radius: 0px 200px 100px 100px; 
+	transition: all 2s;
+} 
+
+.right_arm:hover{
+margin-top:-100px;
+border-radius: 100px 100px 200px 0px;
+}
+
+.torso { 
+	width: 200px; 
+	height: 200px;
+	border-radius: 0 0 50px 50px; 
+} 
+
+.lower_body { 
+	width: 200px; 
+	height: 200px;
+	/* This is another useful property. Hmm what do you think it does?*/
+	margin: 0 auto;
+	display: flex;
+
+} 
+
+.left_leg, .right_leg { 
+	width: 20%; 
+	height: 120px;
+	border-radius: 100px 50px; 
+} 
+
+.left_leg { 
+	margin-left: 45px; 
+	transition: all 1s;
+} 
+
+.left_leg:hover {
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.right_leg { 
+	margin-left: 30px; 
+	transition: all 1s;
+}
+
+.right_leg:hover {
+	-webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+
+.left_eye, .right_eye { 
+	width: 20px; 
+	height: 20px; 
+	border-radius: 15px; 
+	background-color: white;  
+	animation: wink 2s 0s infinite;
+} 
+
+
+
+.left_eye { 
+	/* These properties are new and you haven't encountered
+	in this course. Check out CSS Tricks to see what it does! */
+	position: relative; 
+	top: 100px; 
+	left: 40px; 
+} 
+
+.right_eye { 
+	position: relative; 
+	top: 100px; 
+	left: 120px; 
+}
+
+@keyframes wink{
+	0%{background-color: white;}
+	90%{background-color: white;}
+	95%{background-color: #ca2d6b;}
+	100%{background-color: white;}
+}
+
+
+
