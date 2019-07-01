@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+</head>
+<body>
+<body>
+	<header>
+		<h1>My Web Repository</h1>
+	</header>
+<nav>
+	<ul>
+		<li><a href="repositoryHtml.html">HTML</a></li>
+		<li><a href="repositoryCss.html">CSS</a></li>
+	</ul>
+</nav>
+
+<h2>Selectors</h2>
+order of rules is important<br>
+* (select all elements)<br>
+.className<br>
+#idName<br>
+element<br>
+element1, element2,...,elementN (select all elements from 1 to N)<br>
+element1 element2 ... elementN (select all elementsN which is in ... elements2 which is in element1)<br>
+element1 > element2 (all elements2 that are direct children of elements1)<br>
+element1 + element2 (select elements2 which are directly after elements1 in html file - direct siblings)<br>
+element1 ~ element2 (select all elements2 which are neighbours of elements1 - all siblings)<br>
+element:hover (applies rules to element when user hovers over it)<br>
+element:last-child<br>
+element:first-child<br>
+element:nth-child(NUMBER)<br>
+element:nth-last-child(NUMBER) (same as nth-child but counting in opposite direction)<br>
+element:first-of-type<br>
+element:nth-of-type(NUMBER/odd/even/NUMBER1n+NUMBER2) (select every NUMBER1s element of specified type counting from NUMBER2) <br>
+element:only-of-type (select element1 if it is only of this type)<br>
+element:last-of-type<br>
+element:empty (select all elements which have no children)<br>
+element:not(SELECTOR) (select all elements which are not matching SELEKTOR)<br>
+element[attributeName] (select all elements which has specified picked attribute)<br>
+element[attributeName="expectedValue"]<br>
+element[attributeName^="beginningOfExpectedValue"]<br>
+element[attributeName$="endingOfExpectedValue"]<br>
+element[attributeName*="somePartOfExpectedValue"]<br>
+
+
+
+
+
+
+<h2>Properties and values</h2>
+<h3>Text appearance:</h3>
+<ul>
+	<li>color:COLOR; (for font color)</li>
+	<li>font-family: "firstFontFamilyName", "secondFontFamilyName",...,"serif"/"sans-serif"/"cursive"/"fantasy"/"monospace";</li>
+	<div class="description">last 5 are so called generic-family names, means ones provided by browser always, so at least one of them should be used at the end as prevention if all of previous ones will be not supported by browser<br>
+	quotation signs are not needed for every font family (ones without spaces in between don't need it)<br>
+from Google font we can copy codes to add to html and css files to provide user font family as we want without need of them having it on their devices
+</div>
+	<li>text-decoration:line-through/........</li>
+	<li>text-transform:uppercase/lowercase/capitalize (every first letter will be capitalised)/none........</li>
+	<li>line-height:SIZE (how big will be the gap between lines of text)</li>
+	<li>font-style:italic/......</li>
+	<li>font-weight:NUMBER/bold (NUMBER from between 100 and 900 defines the bold of letters)</li>
+	<li>font-size:NUMBER</li>
+
+</ul>
+
+
+
+
+
+
+<h3>Background:</h3>
+<ul>
+	<li>background-color:COLOR;</li>
+	<li>backround-image:url("URL");</li>
+	<li>background-repeat:repeat/repeat-x/repeat-y/no-repeat/space/round;</li>
+	<div class="description">space - image will be repeated in the way that first and last copies of image will be positioned and then there will appear as many as possible copies in between, leaving blank spaces in gaps<br>
+	round - all copies will fill container being confined or expanded leaving no blank spaces</div>
+	<li>background-size:cover/contain/auto/SIZE;</li>
+	<div class="description">cover - image will cover whole container<br>
+		contain - image will be fully visible<br>
+		auto - original size<br>
+	as SIZE we can provide one or two values (width and height)</div>
+</ul>
+
+<h3>Layout:</h3>
+<ul>
+	<li>text-align:center/left/right/justify;</li>
+	<li>display:block/inline-block/.................</li>
+</ul>
+
+<h3>Border:</h3>
+<ul>
+	<li>border: SIZE TYPE COLOR;</li>
+</ul>
+
+<h3>Lists appearance:</h3>
+<ul>
+	<li>list-style:TYPE POSITION IMAGE;</li>
+	<div class="description">TYPE = disc/armenian/circle/cjk-ideographic/decimal/decimal-leading-zero/georgian/hebrew/hiragana/hiragana-iroha/katakana/katakana-iroha/lower-alpha/lower-greek/lower-latin/lower-roman/none/square/upper-alpha/upper-greek/upper-latin/upper-roman</div>
+</ul>
+
+<h3>Images properties:</h3>
+<ul>
+	<li>float:left/right</li>
+	<div class="description">left - the image will be at the left side and text around will float to its left<br>
+	this property most often goes together with: 
+
+clear:both   
+
+property for elements that we want to appear below the image, not floating it</div>
+</ul>
+cursor, colors (hax, rgb, rgba), padding: TOP RIGHT BOTTOM LEFT, margin, width and height properties for content size, px % 5em(5 times of container size) rem (relative to root element), box-shadow, transition+transform, animation, position:relative etc +top/bottom etc
+
+</body>
+</html>

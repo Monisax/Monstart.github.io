@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML</title>
+</head>
+<body>
+	<body>
+	<header>
+		<h1>My Web Repository</h1>
+	</header>
+<nav>
+	<ul>
+		<li><a href="repositoryHtml.html">HTML</a></li>
+		<li><a href="repositoryCss.html">CSS</a></li>
+	</ul>
+</nav>
+	<h2>General tags:</h2>
+	<ul>
+		<li><span class="tag">a</span></li>
+		<ul>
+			<li><span class="attribute">target</span>=<span class="aValue">"_blank"</span></li>
+			<li><span class="attribute">target</span>=<span class="aValue">"_self"</span></li>
+			<li><span class="attribute">target</span>=<span class="aValue">"_parent"</span></li>
+			<li><span class="attribute">target</span>=<span class="aValue">"_top"</span></li>
+			<li><span class="attribute">target</span>=<span class="aValue">"frameName"</span></li>
+		</ul>
+		<li><span class="tag">iframe</span></li>
+		<li><span class="tag">pre</span></li>
+		<li><span class="tag">abbr</span></li>
+		<ul>
+			<li><span class="attribute">title</span>=<span class="aValue">"fullName"</span></li>
+		</ul>
+	</ul>
+
+<h2>Style and semantic tags:</h2>
+<ul>
+	<li><span class="tag">mark</span></li>
+	<div class="description">highlights text inside</div>
+	<li><span class="tag">sub</span></li>
+	<div class="description">subscripts (bottom notation) text inside</div>
+	<li><span class="tag">sup</span></li>
+	<div class="description">supscripts (top notation) text inside</div>
+	<li><span class="tag">del</span></li>
+	<div class="description">make line through text inside like it is deleted from sentence</div>
+	<li><span class="tag">ins</span></li>
+	<div class="description">make line under text inside like it is new inserted</div>
+	<li><span class="tag">blockquote</span></li>
+	<ul>
+		<li><span class="attribute">cite="URL"</span> (source from quotation comes from)</li>
+	</ul>
+</ul>
+
+<h2>Forms (form tag + other tags inside):</h2>
+<p><ul>
+	<li><span class="tag"> form</span></li>
+	<ul>
+		<li><span class="attribute"> method</span>=<span class="aValue">"get"</span></li>
+		<li><span class="attribute"> method</span>=<span class="aValue">"post"</span></li>
+	</ul>
+</ul>
+<ul>
+<div class="description">
+	<p>
+	For all following tags (but not select???) we can add: <br>
+	<span class="attribute">required</span> attribute which causes checking the presence of concrete input before sending to server<br>
+	<span class="attribute">name</span>=<span class="aValue">"nameForServerToRecognizeProvidedData"</span> attribute which is necessary in order to save data from user by server<br>
+	</p>
+	<p>
+	Server will receive sth like <span class="aValue">nameValue</span>=<span class="aValue">valueValue</span>, this is why <span class="attribute">name</span> is important and <span class="attribute">value</span> has to be provided in input tags where there is no text value, so in radio type, checkbox type, option tags
+</p>
+</div>
+		<li><span class="tag">input<span></span></li>
+		<ul>
+			<li><span class="attribute">type</span>=<span class="aValue">"text"</span>   <span class="attribute">value</span>=<span class="aValue">"defaultTextInFrame"</span></li>
+			<li><span class="attribute">type</span>=<span class="aValue">"email"  </span>  <span class="attribute">value</span>=<span class="aValue">"defaultTextInFrame"</span></li>
+			<li><span class="attribute">type</span>=<span class="aValue">"date"</span></li>
+			<div class="description">gives nice date picker</div>
+			<li><span class="attribute">type</span>="radio" <span class="attribute">name</span>="sameNameForEveryOptionOfThisGroup" (here required to obtain possibility of selection only one of options)</li>
+			<div class="description">every option has its own input tag, inside which there is value of it, then every of them has name tag, which has to match in order to give opportunity to chose only one of options</div>
+			<li><span class="attribute">type</span>="checkbox"</li>
+			<li><span class="attribute">type</span>="submit"   <span class="attribute">value</span>="nameWrittenInButton"</li>
+			<li><span class="attribute">type</span>=<span class="aValue">"reset"</span>   <span class="attribute">value</span>=<span class="aValue">"nameWrittenInButton"</span></li>
+			<li><span class="attribute">type</span>=<span class="aValue">"password"</span><span class="attribute">minlength</span>=<span class="aValue">"NUMBER"</span> (how short the password can be)</li>
+			<li><span class="attribute">type</span>=<span class="aValue">"range"</span>   <span class="attribute">value</span>=<span class="aValue">"NUMBER"</span> (value at start)   <span class="attribute">min</span>=<span class="aValue">"NUMBER"</span>   <span class="attribute">max</span>=<span class="aValue">"NUMBER"</span></li>
+			<div class="description">gives slider control</div>
+		</ul>
+		<li><span class="tag">select</span> (+ <span class="tag">option</span> tags inside)</li>
+		<div class="description">shows list of options to choose instead of typing or marking by user; <br>both select and option tags use closing tags;<br>we can also group some options by <span class="tag">optgroup</span> tag surrounding those options - by adding <span class="attribute">label</span> attribute to <span class="tag">optgroup</span> tag we can name the group for user</div>
+		<ul>
+			<li><span class="attribute">name</span>=<span class="aValue">"nameForServerToRecognizeProvidedData"</span></li>
+			<li><span class="attribute">multiple</span></li>
+			<div class="description">allows to choose multiple options in select</div>
+			<li><span class="attribute">disabled</span></li>
+			<li><span class="attribute">size</span>="NUMBER" (how many options will be visible at once)</li>
+		</ul>
+		<li><span class="tag">option</span></li>
+		<li><span class="tag">textarea</span></li>
+		<li><span class="tag">meter</span></li>
+		<ul>
+			<li><span class="attribute">value</span>=<span class="aValue">"NUMBER"</span> (current value)   <span class="attribute">min</span>=<span class="aValue">"NUMBER"</span>   <span class="attribute">max</span>=<span class="aValue">"NUMBER"</span>   <span class="attribute">high</span>=<span class="aValue">"NUMBER"</span> (from what point value is treated as high)   <span class="attribute">low</span>=<span class="aValue">"NUMBER"</span>   <span class="attribute">optimum</span>=<span class="aValue">"NUMBER"</span></li>
+		</ul>
+	</ul>
+</p>
+<div>
+	ctrl+/ comment and uncomment line where cursor is placed or part of code which is marked
+	</div>
+
+
+
+	<p>
+		SVG, contenteditable attribute, meter tag, tooltip by title attribute, dir="rtl" as attribute and value for bdo tagthat make text diaplayed in right to left direction
+	</p>
+
+</body>
+</html>
